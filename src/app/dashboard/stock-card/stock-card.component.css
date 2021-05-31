@@ -1,0 +1,100 @@
+.stock-card-container {
+  width: 21.375rem;
+  height: 13.8125rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--secundary-color);
+  border-radius: 0.25rem;
+  border-left: solid var(--positve-variation-color) 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.stock-card-container:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+.negative-variation-border {
+  border-left-color: var(--negative-variation-color);
+}
+
+.stock-info-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock-info-container h2,
+p {
+  margin: 0;
+}
+
+.stock-info-container h2 {
+  color: var(--text-color);
+}
+
+.stock-info-container p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-color-ligth);
+}
+
+.stock-value-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.stock-value-container .value {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.stock-value-container .variation {
+  background-color: var(--positve-variation-color);
+  font-size: 0.875rem;
+  color: var(--secundary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 0.25rem;
+  font-size: 00.875rem;
+}
+
+.stock-value-container .negative-variation {
+  background-color: var(--negative-variation-color);
+}
+/*# sourceMappingURL=stock-card.component.css.map */
